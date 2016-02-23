@@ -3,7 +3,6 @@ package fibbonacci;
 import java.util.Scanner;
 public class serie {
     private int fibo;
-    private int fibant;
     private Scanner teclado;
     int n;
     public int get_numserie(){
@@ -16,16 +15,19 @@ public class serie {
     
     void imprimir(){
          int cont;
+         int fibant;
          int fibantdos;
-         fibantdos=1;
+         fibantdos=0;
          fibant=1;
-        cont = 0;
-        fibo=1;
+         cont = 0;
+         fibo=1;
+         System.out.println("su serie es: ");
         while(n>cont){
            
-            System.out.println("su serie es: " +fibo);
+            System.out.println(+fibo);
             fibo=fibant+fibantdos;
-            
+            fibantdos=fibant;
+            fibant=fibo;            
             cont++;
         }
     
