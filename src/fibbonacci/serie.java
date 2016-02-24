@@ -12,7 +12,7 @@ public class serie {
         n= teclado.nextInt();
         return n;
     }
-    
+    //terminado
     void imprimir(){
          int cont;
          int fibant;
@@ -24,13 +24,13 @@ public class serie {
          System.out.println("su serie es: ");
         while(n>cont){
            
-            System.out.println(+fibo);
+            System.out.print(+fibo+" ");
             fibo=fibant+fibantdos;
             fibantdos=fibant;
             fibant=fibo;            
             cont++;
         }
-    
+         System.out.println();
     }
     
 }
